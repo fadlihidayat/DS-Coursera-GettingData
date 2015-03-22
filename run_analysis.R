@@ -20,7 +20,7 @@ traindat <- "./data/UCI HAR Dataset/train/X_train.txt"
 
 #load variable label
 varlabel <- read.table(var, header = FALSE)
-
+4
 #load test data, subject & activity set
 testdata <- read.table(testdat,header = FALSE)
 testsubject <- read.table(subtestdat,header = FALSE)
