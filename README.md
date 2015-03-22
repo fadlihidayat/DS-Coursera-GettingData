@@ -30,7 +30,7 @@ the script will make several data set into your current working directory enviro
 11. Write the final data setinto file.
 
 ### CodeBook.md
-The CodeBook.md contain explanation of data, variable, adn the transformation process been throught by the UCI HAR Tidyset.txt
+The CodeBook.md contain explanation of data, variable, and the transformation process been throught by the UCI HAR Tidyset.txt
 
 
 ### UCI HAR Tidyset.txt
