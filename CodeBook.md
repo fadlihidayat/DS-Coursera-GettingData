@@ -78,18 +78,25 @@ fBodyGyroJerkMag
 #Data Transformation:
 
 The final tidy data sustain several transformation from the original hereby the description in sequence of the data transformation journey:
+
 1. Get the data : - the data downloaded from here "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" 
 				 - the data is unzipped in the current R working directory
 				 - the data contain test and train data
+
 2. Names the variable : the data variables named based on the variable column name in the features.txt
+
 3. Select mean & std column : the data sub setted by the column names that contain std and mean. it will cut the data set into only 79 variables
-4. Add subject & activity var to each obs : bind the subject and activity data into the latest data set. the activity got from "y_test.txt" for test data set & the "y_train.txt" for the train data set
-											the subject data set got from the "subject_test.txt" for the test data & "subject_train.txt" for the train data set.
+
+4. Add subject & activity var to each obs : bind the subject and activity data into the latest data set. the activity got from "y_test.txt" for test data set & the "y_train.txt" for the train data set the subject data set got from the "subject_test.txt" for the test data & "subject_train.txt" for the train data set.
+
 5. Bind the train and test data together : binding the test and train data set into one data set.
-6. Give tha activity descriptive label : cast the activity into factorial class and give 6 levels and labels for each one activity, the activity labels consist: 
-										 ("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"). The reference gotten from the "activity_labels.txt"
+
+6. Give tha activity descriptive label : cast the activity into factorial class and give 6 levels and labels for each one activity, the activity labels consist: 					("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"). The reference gotten from the "activity_labels.txt"
+
 7. Group by subject and activity : group the data by subject and activity.
+
 8. Summarise by mean : summarise each observation by its group and the mean value.
+
 9. Write the tidy data set into txt file : write the final and tidy data set into txt file. the txt file name is "UCI HAR Tidyset.txt"
 
 
