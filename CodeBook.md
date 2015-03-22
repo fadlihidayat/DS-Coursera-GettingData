@@ -3,8 +3,7 @@ This Project is made for tidying the data collected from the previous experiment
 
 #Short description of the project
 The project contain a script produce a data set:
-final_tidy_data : contain the "finaldata" set that already summarise by subject and activity, the script will automatically generate a 
-					 txt data into your current R workdir without Row names. The txt file will be named "UCI HAR Tidyset.txt".
+final_tidy_data : contain the "finaldata" set that already summarise by subject and activity, the script will automatically generate a txt data into your current R workdir without Row names. The txt file will be named "UCI HAR Tidyset.txt".
 
 					 
 #Variables Description
@@ -13,11 +12,12 @@ the variables description of the final_tidy_data :
 This data set contain column that added by binding the data to related subject and activity:
 
 subject : contain the id of the subject that tested and trained. the subject consist numerical class from 1 to 30
-activity : contain the activity factor
+activity : contain the activity factor ("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING")
 
 ##note for the next variables
 /*
-The Variables selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+The Variables selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 These signals were used to estimate variables of the feature vector for each pattern:  
@@ -26,8 +26,13 @@ The variables only include the mean and the standard deviation(std) from the ori
 - mean() : Mean value, example : tBodyAcc-mean()-X
 - std()  : Standard deviation, example : tBodyAcc-std()-X
 - meanFreq():  Weighted average of the frequency components to obtain a mean frequency, ex : fBodyAcc-meanFreq()-X
+
 all of the next variables are numerical class
+
+all ot the next variables is measured in -1 into 1 unit.
+
 */
+
 
 tBodyAcc-XYZ
 
